@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dados.css">
+    <title>Proposta de Consórcio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="window">
+        <header class="toolbar toolbar-header">
+            <h1 class="title">Proposta de Consórcio</h1>
+        </header>
+        
+        <div class="window-content">
+            <div class="pane-group">
+                <div class="pane">
+                    <div class="busca">
+                        <input type="text"  id="busccli" class="form-busca" placeholder="Busca Cliente">
+                        <input type="numer" id="buscodi" class="form-busca" placeholder="Busca Matricula">
+                        <br>
+                        <button class="btn btn-positive" onclick="buscar()">Buscar Cliente</button>
+                    </div>
+                
+                    <div class="form-group">
+                        <br>
+                        <input type="text"   id="cliente" class="form-control" placeholder="Cliente">
+                        <input type="number" id="grupo"   class="form-control" placeholder="Grupo">
+                        <input type="text"   id="cota"    class="form-control" onkeyup="mascaraMoeda(this,event)" value="" placeholder="Cota">
+                        <input type="number" id="prazo"   class="form-control" placeholder="Prazo">
+                        <input type="text"   id="parcela" class="form-control" onkeyup="mascaraMoeda(this,event)" value="" placeholder="Parcela">
+                        <input type="text"   id="lance"   class="form-control" onkeyup="mascaraMoeda(this,event)" value="" placeholder="Lance">
+                        <input type="text"   id="parlanc" class="form-control" onkeyup="mascaraMoeda(this,event)" value="" placeholder="Parcela Lance">
+                        <p></p>
+                        <button class="btn btn-positive" id="savecli" onclick="salvar()">Salvar Dados</button>
+                        <button class="btn btn-primary" id="novaprop" onclick="novaProp()">Nova Proposta</button>
+                        <button class="btn btn-primary" id="geraPdf" onclick="gerarPdf()">Gerar PDF</button>
+                    </div>
+                </div>
+                 
+                <div class="pane">
+                    <div id="conjuntos-alfa">
+                        <img src="Exemplo Cabecalho.png" id="noma" alt="nomalogo">
+                        <div id="resulCliente"></div>
+                        <div id="resultado"></div>
+                        <img src="Exemplo Rodape.png" id="rodape" alt="nomarodape">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+

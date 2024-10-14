@@ -1,0 +1,174 @@
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: system, -apple-system, ".SFNSDisplay-Regular", "Helvetica Neue", Helvetica, "Segoe UI", sans-serif;
+    font-size: 13px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #e8e6e8;
+}
+.window {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  background-color:#e8e6e8;
+}
+
+.window-content {
+    position: relative;
+    overflow-y: auto;
+    display: flex;
+    flex: 1;
+}
+
+.toolbar {
+    min-height: 22px;
+    box-shadow: inset 0 1px 0 #f5f4f5;
+    background-color: #e8e6e8;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e8e6e8), color-stop(100%, #d1cfd1));
+    background-image: -webkit-linear-gradient(top, #e8e6e8 0%, #d1cfd1 100%);
+    background-image: linear-gradient(to bottom, #e8e6e8 0%, #d1cfd1 100%);
+}
+
+.toolbar-header .title {
+    margin-top: 1px;
+}
+
+.title {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: #555;
+    cursor: default;
+}
+    
+.form-control {
+    display: inline-block;
+    margin: 6px 8px;
+    width: 50%;
+    min-height: 25px;
+    padding: 5px 10px;
+    font-size: 13px;
+    line-height: 1.6;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+}
+    
+.form-control:focus {
+    border-color: #6db3fd;
+    box-shadow: 3px 3px 0 #6db3fd, -3px -3px 0 #6db3fd, -3px 3px 0 #6db3fd, 3px -3px 0 #6db3fd;
+}
+
+.btn {
+    display: inline-block;
+    padding: 3px 8px;
+    margin: 8px;
+    font-size: 12px;
+    line-height: 1.4;
+    text-align: center;
+    color:  #fff;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: default;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.06);
+    -webkit-app-region: no-drag;
+  }
+  
+  .btn-positive {
+    border-color: #29a03b;
+    border-bottom-color: #248b34;
+    background-color: #5bd46d;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #5bd46d), color-stop(100%, #29a03b));
+    background-image: -webkit-linear-gradient(top, #5bd46d 0%, #29a03b 100%);
+    background-image: linear-gradient(to bottom, #5bd46d 0%, #29a03b 100%);
+  }
+  .btn-positive:active {
+    background-color: #34c84a;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #34c84a), color-stop(100%, #248b34));
+    background-image: -webkit-linear-gradient(top, #34c84a 0%, #248b34 100%);
+    background-image: linear-gradient(to bottom, #34c84a 0%, #248b34 100%);
+  }
+
+.form-busca {
+    display: inline-block;
+    margin: 6px 8px;
+    width: 22%;
+    min-height: 25px;
+    padding: 5px 10px;
+    font-size: 13px;
+    line-height: 1.6;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+}
+
+.form-busca:focus {
+    border-color: #6db3fd;
+    box-shadow: 3px 3px 0 #6db3fd, -3px -3px 0 #6db3fd, -3px 3px 0 #6db3fd, 3px -3px 0 #6db3fd;
+}
+
+.btn-primary {
+    border-color: #388df8;
+    border-bottom-color: #0866dc;
+    background-color: #6eb4f7;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #6eb4f7), color-stop(100%, #1a82fb));
+    background-image: -webkit-linear-gradient(top, #6eb4f7 0%, #1a82fb 100%);
+    background-image: linear-gradient(to bottom, #6eb4f7 0%, #1a82fb 100%);
+  }
+  .btn-primary:active {
+    background-color: #3e9bf4;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3e9bf4), color-stop(100%, #0469de));
+    background-image: -webkit-linear-gradient(top, #3e9bf4 0%, #0469de 100%);
+    background-image: linear-gradient(to bottom, #3e9bf4 0%, #0469de 100%);
+  }
+
+.pane-group {
+  position: absolute;
+  text-align: center;
+  display: flex;
+}
+
+.pane {
+  position: relative;
+  overflow-y: auto;
+  flex: 1;
+  border-left: 3px solid #ddd;
+}
+
+#noma { width: 100%;}
+#rodape { 
+  height: 50%;
+  width: 100%;}
+
+#conjuntos-alfa {
+  width: 100%;
+  display: grid;
+  background-color: #fff;
+}
+.resultado-cliente {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.resultado-item {
+  text-align: left;
+  font-size: 14px;
+  margin: 1px;
+}
+
+.resultado-item h3 {
+  margin-top: 0;
+}
